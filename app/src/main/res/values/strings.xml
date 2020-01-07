@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Anduxx</string>
+
+    <string name="counter_demo_one">Counter demo use individual store.</string>
+    <string name="counter_demo_two">Counter demo use global store.</string>
+
+    <string name="counter_demo_one_desc">This counter use local store in Activity.</string>
+    <string name="counter_demo_two_desc">This counter use global store in Application.</string>
+
+    <string name="viewpager_demo_one">Activity with viewpager demo, \n
+        use individual store.</string>
+    <string name="viewpager_demo_two">Activity with viewpager demo, \n
+        use global store.</string>
+
+    <string name="viewpager_demo_one_desc">This page and fragments use local store in Activity.</string>
+    <string name="viewpager_demo_two_desc">This page and fragments use global store in Application.</string>
+</resources>
