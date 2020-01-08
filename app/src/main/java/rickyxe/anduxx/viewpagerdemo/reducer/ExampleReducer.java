@@ -16,16 +16,19 @@ public class ExampleReducer implements Reducer<DemoPageState> {
     @Override
     public DemoPageState reduce(DemoPageState currentState, Action action) {
         Log.d(LOG_TAG, "reduce action !!!");
-        if (action.isTypeOf(CHANGE_TIME)) {
-            int time = (int) action.data;
-            String type = currentState.type;
-            return new DemoPageState(time, type);
-        } else if (action.isTypeOf(CHANGE_TYPE)) {
-            int time = currentState.year;
-            String type = (String) action.data;
-            return new DemoPageState(time, type);
+        switch (action.type) {
+            case CHANGE_TIME: {
+                int time = (int) action.data;
+                String type = currentState.type;
+                return new DemoPageState(time, type);
+            }
+            case CHANGE_TYPE: {
+                int time = currentState.year;
+                String type = (String) action.data;
+                return new DemoPageState(time, type);
+            }
+            default:
+                return currentState;
         }
-
-        return currentState;
     }
 }
