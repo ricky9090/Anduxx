@@ -105,6 +105,7 @@ public class MainActivity extends AppCompatActivity implements
     public void destroyStore() {
         if (MyApplication.getAppStoreManager(this).getStoreById(GLOBAL_COUNTER_STORE_ID) != null) {
             MyApplication.getAppStoreManager(this).getStoreById(GLOBAL_COUNTER_STORE_ID).onDestroy();
+            MyApplication.getAppStoreManager(this).removeStore(GLOBAL_COUNTER_STORE_ID);
         }
     }
 
