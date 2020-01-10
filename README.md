@@ -1,6 +1,12 @@
 # Anduxx
 A simple implementation of Redux for Android App
 
+
+|  Demo  |    |    |
+| -- | -- | -- |
+| ![Screenshot_1](img/Screenshot_1.jpg) | ![Screenshot_2](img/Screenshot_2.jpg) | ![Screenshot_3](img/Screenshot_3.jpg) |
+
+
 ### Store in Activity
 1. Create ``State``, ``Action``
 ```java
