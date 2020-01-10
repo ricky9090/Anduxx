@@ -54,7 +54,7 @@ public class CounterDemoTwoActivity extends AppCompatActivity implements
 
     private void initViews() {
         descText = findViewById(R.id.desc_text);
-        descText.setText(R.string.counter_demo_one_desc);
+        descText.setText(R.string.counter_demo_two_desc);
 
         counterText = findViewById(R.id.counter_value);
         increaseButton = findViewById(R.id.increase);
